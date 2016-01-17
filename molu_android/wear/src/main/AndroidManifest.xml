@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.test.environment.alex.environmenttesttask002">
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.DeviceDefault">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".DataLayerListenerService">
+            <intent-filter>
+                <action android:name="com.mobvoi.android.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".TaxiHandler"
+            android:label="@string/title_activity_taxi_handler">
+            <intent-filter>
+                <action android:name="com.mobvoi.semantic.action.TAXI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ShowTarget"
+            android:label="@string/title_activity_show_target" />
+        <activity
+            android:name=".UberDetail"
+            android:label="@string/title_activity_uber_detail"></activity>
+        <activity
+            android:name=".TrueDetail"
+            android:label="@string/title_activity_true_detail">
+        </activity>
+    </application>
+
+</manifest>

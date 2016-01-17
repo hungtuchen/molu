@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test.environment.alex.environmenttesttask002.TaxiHandler"
+    tools:deviceIds="wear_round">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_round"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <android.support.wearable.view.DelayedConfirmationView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/timer"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        app:circle_color="@color/blue"
+        android:src="@drawable/falsepic"
+        app:circle_padding="@dimen/circle_padding"
+        app:circle_border_width="@dimen/circle_border_normal_width"
+        app:circle_border_color="@color/white"
+        app:circle_radius="@dimen/circle_radius"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.wearable.view.DismissOverlayView
+        android:id="@+id/dismiss_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

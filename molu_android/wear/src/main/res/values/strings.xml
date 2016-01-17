@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EnvironmentTestTask002</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="title_activity_taxi_handler">TaxiHandler</string>
+    <string name="title_activity_show_target">ShowTarget</string>
+    <string name="title_activity_grid_example">GridExampleActivity</string>
+    <string name="title_activity_uber_detail">UberDetail</string>
+    <string name="title_activity_true_detail">TrueDetail</string>
+</resources>
