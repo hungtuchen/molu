@@ -1,2 +1,2 @@
 # Molu
-a chatting app on your uber ride with strangers to the same destination
+a social app that let you utilize your uber ride time to communicate with "strangers" who share similar destinations
